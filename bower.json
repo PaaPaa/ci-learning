@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "authors": [
+    "catspaa <catspaa@yahoo.co.uk>"
+  ],
+  "description": "Job finding app",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.6"
+  }
+}
