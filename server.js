@@ -6,6 +6,8 @@ var jobsData = require("./jobs-data.js");
 //Create the application
 var app = express();
 
+var jobService = require("./jobs-service.js")(jobsData, app);
+
 //Define the root folder for the application and the view engine that it uses
 //Jade is a high level language for defining html
 app.set('views', __dirname);
@@ -14,12 +16,12 @@ app.set('view engine', 'jade');
 //Define the top level folder of the page
 app.use(express.static(__dirname + '/public'));
 
-//Define the routing
-app.get('/api/jobs', function(req, res){
-    jobsData.findJobs().then(function (collection){
-        res.send(collection);
-    })
-});
+// //Define the routing
+// app.get('/api/jobs', function(req, res){
+//     jobsData.findJobs().then(function (collection){
+//         res.send(collection);
+//     })
+// });
 
 
 app.get('*', function(req,res){

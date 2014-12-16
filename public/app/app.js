@@ -1,6 +1,6 @@
-angular.module('app', ['ngResource']);
+app = angular.module('app', ['ngResource']);
 
-angular.module('app').controller('testCtrl', function($scope, $resource) {
+angular.module('app').controller('testCtrl', function($scope, $resource, jobs) {
     //$scope.test = "working!";
     //$scope.message = "This should be displayed";
     // $scope.jobs = [{
@@ -12,4 +12,11 @@ angular.module('app').controller('testCtrl', function($scope, $resource) {
     // }];
 
     $scope.jobs = $resource('/api/jobs').query();
+   
+    
+    $scope.submit = function(){
+         var job = {title: $scope.title, description: $scope.description};
+         jobs.save(job);
+         $scope.jobs.push(job);
+    }
 });

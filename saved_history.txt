@@ -1,0 +1,51 @@
+    1  npm install mongoose --save
+    2  mongo
+    3  git push heroku master
+    4  bower install angular-resouce --save
+    5  bower install angular-resource --save
+    6  npm install mocha -h
+    7  mocha
+    8  npm install mocha -g
+    9  mocha
+   10  npm install --save-dev chai
+   11  mocha
+   12  npm install --save bluebird
+   13  mocha
+   14  git push "root"
+   15  hist
+   16  history
+   17  git commit -m root
+   18  git push heroku master
+   19  git commit -m root
+   20  git commit
+   21  git commit --help
+   22  git add
+   23  git add .
+   24  git commit
+   25  github remote
+   26  git remote
+   27  git remote add https://github.com/PaaPaa/ci-learning.git
+   28  git remote add origin https://github.com/PaaPaa/ci-learning.git
+   29  git remote
+   30  git add -A
+   31  git commit -m "tests for jobs get and refactored"
+   32  git push -u origin master
+   33  mocha
+   34  npm install supertest
+   35  mocha
+   36  npm install body-parser
+   37  mocah
+   38  mocha
+   39  npm install karma-mocha karama-chai
+   40  npm install karma-mocha karma-chai
+   41  npm install karama-cli -g
+   42  npm install karma-cli -g
+   43  karma init
+   44* 
+   45  npm install pantomjs karma-phantomjs-launcher --save-dev
+   46  npm install phantomjs karma-phantomjs-launcher --save-dev
+   47  karma start
+   48  history
+   49  history  > saved_history.txt
+   50  bower install --save angular-mocks
+   51  history  > saved_history.txt

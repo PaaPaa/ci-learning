@@ -22,20 +22,22 @@ var findJobs = function(query) {
     return Promise.cast(mongoose.model('Job').find(query).exec());
 };
 
-exports.findJobs = findJobs;
 
-exports.connectDB = Promise.promisify(mongoose.connect, mongoose);
+exports.closeDB = function (){
+    return mongoose.connection.close();
+}
+
 
 var createJob = Promise.promisify(Job.create, Job);
 
 exports.seedJobs = function() {
-        return findJobs({}).then(function(collection) {
-            if (collection.length === 0) {
-                return Promise.map(jobs, function (job){
-                    return createJob(job);
-                });
-            }
-        });
+    return findJobs({}).then(function(collection) {
+        if (collection.length === 0) {
+            return Promise.map(jobs, function(job) {
+                return createJob(job);
+            });
+        }
+    });
 }
 
 exports.resetJobs = function() {
@@ -44,3 +46,8 @@ exports.resetJobs = function() {
     });
 }
 
+exports.saveJob = createJob;
+
+exports.findJobs = findJobs;
+
+exports.connectDB = Promise.promisify(mongoose.connect, mongoose);

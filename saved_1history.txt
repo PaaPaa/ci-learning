@@ -1,0 +1,49 @@
+    1  ls
+    2  ls node_modules/
+    3  node --version
+    4  more package.json 
+    5  ls node_modules/
+    6  bower init
+    7  ls bower
+    8  ls node_modules/bower/
+    9  more  node_modules/bower/package.json 
+   10  bower install angular --save
+   11  server.js
+   12  node_modules/server.js
+   13  cd node_modules/
+   14  ls -l
+   15  chmod 755 server.js
+   16  ls -l
+   17  bower install --save bootstrap
+   18  cd public
+   19  ls
+   20  cd ..
+   21  ls
+   22  md public/directives
+   23  mkdir public/directives
+   24  cd public
+   25  ls
+   26  cd app
+   27  ls
+   28  more app.js 
+   29  cd ..
+   30  ls
+   31  more bower_components/
+   32  ls bower_components/
+   33  cd ..
+   34  cls
+   35  clear
+   36  heroku --version
+   37  git init
+   38  git add -A
+   39  git commit -m "root"
+   40  heroku
+   41  heroku login
+   42  heroku create
+   43  git push heroku master
+   44  heroku ps:scale web=1
+   45  chmod a+x mongod 
+   46  ./mongod 
+   47  history
+   48  ./mongod
+   49  history > saved_1history.txt
